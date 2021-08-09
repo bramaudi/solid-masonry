@@ -1,25 +1,45 @@
 {
   "name": "solid-masonry",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Port of react-masonry-css for Solid JS",
-  "main": "./dist/masonry.umd.js",
-  "module": "./dist/masonry.module.js",
-  "exports": "./dist/masonry.modern.js",
-  "files": ["dist"],
+  "main": "dist/esm/masonry.js",
+  "module": "dist/esm/masonry.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "bundle": "microbundle src/Masonry.tsx",
+    "bundle": "rollup -c",
+    "prepublishOnly": "pnpm bundle",
     "start": "vite",
-    "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
+  "keywords": [
+    "layout",
+    "masonry",
+    "css",
+    "solidjs"
+  ],
+  "author": "Brama Udi <bramaudi.al@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bramaudi/solid-masonry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bramaudi/solid-masonry/issues"
+  },
+  "homepage": "https://github.com/bramaudi/solid-masonry#readme",
   "license": "MIT",
   "devDependencies": {
-    "microbundle": "^0.13.3",
+    "rollup": "^2.56.1",
+    "rollup-preset-solid": "^1.0.1",
     "vite": "^2.4.4",
     "vite-plugin-solid": "^2.0.1"
   },
   "dependencies": {
     "solid-js": "^1.0.7"
+  },
+  "peerDependencies": {
+    "solid-js": ">= 0.26"
   }
 }

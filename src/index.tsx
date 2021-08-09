@@ -1,5 +1,5 @@
 import { render } from "solid-js/web";
-import Masonry from './Masonry'
+import Masonry from './masonry'
 import './masonry.css'
 
 const App = () => {
