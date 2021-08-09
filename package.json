@@ -1,6 +1,6 @@
 {
   "name": "solid-masonry",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Port of react-masonry-css for Solid JS",
   "main": "dist/esm/masonry.js",
   "module": "dist/esm/masonry.js",
