@@ -18,12 +18,12 @@ type propTypes = {
   // Custom attributes, however it is advised against
   // using these to prevent unintended issues and future conflicts
   // ...any other attribute, will be added to the container
-  columnAttrs: { style?: object } // object, added to the columns
+  columnAttrs?: { style?: object } // object, added to the columns
 
   // Deprecated props
   // The column property is deprecated.
   // It is an alias of the `columnAttrs` property
-  column: object
+  column?: object
 }
 
 const DEFAULT_COLUMNS = 2;
