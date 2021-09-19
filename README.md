@@ -12,6 +12,10 @@ npm i solid-masonry
 
 ## Usage
 
+Try it on [Playground](https://playground.solidjs.com/?hash=-1046197716&version=1.1.3)
+
+Codesandbox - [Demo](https://hmhnj.csb.app/) | [Editor](https://codesandbox.io/s/solid-masonry-hmhnj)
+
 ```tsx
 import './masonry.css'
 import { render } from 'solid-js/web'
