@@ -3,7 +3,16 @@ import Masonry from './masonry'
 import './masonry.css'
 
 const App = () => {
-	const data = [1,2,3,4,5,6,7,8]
+	const posts = [
+		{
+			title: "hello world",
+			text: "amogus"
+		},
+		{
+			title: "Sussy title",
+			text: "Momogugus"
+		}
+	]
 	const randomHeight = () => {
 		const heightList = [150, 200, 250]
 		return heightList[Math.floor(Math.random() * heightList.length)]
@@ -20,9 +29,14 @@ const App = () => {
 			breakpointCols={breakpointColumnsObj}
 			className="my-masonry-grid"
 			columnClassName="my-masonry-grid_column"
-			each={data}
+			each={posts}
 		>
-			{(item) => <div style={{height: randomHeight() + 'px'}}>Item: {item}</div>}
+			{(item: { title: string, text: string }) => <div style={{height: randomHeight() + 'px'}}>
+				<div>
+					<h1>{item.title}</h1>
+					<p>{item.text}</p>
+				</div>
+			</div>}
 		</Masonry>
 	)
 }
