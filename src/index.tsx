@@ -14,15 +14,15 @@ const App = () => {
 		700: 2,
 		500: 1
 	};
+	
 	return (
 		<Masonry
 			breakpointCols={breakpointColumnsObj}
 			className="my-masonry-grid"
 			columnClassName="my-masonry-grid_column"
+			each={data}
 		>
-			{data.map((_, index) => (
-				<div style={{ height: randomHeight() + 'px' }}>My element {index + 1}</div>
-			))}
+			{(item) => <div style={{height: randomHeight() + 'px'}}>Item: {item}</div>}
 		</Masonry>
 	)
 }
