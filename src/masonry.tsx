@@ -4,7 +4,6 @@ import {
   For,
   onCleanup,
   onMount,
-  Component,
   JSXElement
 } from "solid-js";
 
